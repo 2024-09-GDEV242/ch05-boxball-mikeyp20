@@ -14,6 +14,14 @@ import java.awt.geom.*;
 
 public class Canvas
 {
+    public void drawRectangle(int x1, int y1, int width, int height)
+    {
+        graphic.drawRect(x1,y1,width,height);
+        canvas.repaint();
+        
+    }
+    
+    
     private JFrame frame;
     private CanvasPane canvas;
     private Graphics2D graphic;

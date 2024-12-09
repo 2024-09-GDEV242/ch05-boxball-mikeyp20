@@ -9,11 +9,12 @@ import java.awt.geom.*;
  *
  * This movement can be initiated by repeated calls to the "move" method.
  * 
- * @author Michael Kölling (mik)
+ * @author Michael Patterson
  * @author David J. Barnes
  * @author Bruce Quig
  *
- * @version 2016.02.29
+ *
+ * @version Oct 20th 2024
  */
 
 public class BouncingBall
@@ -75,7 +76,9 @@ public class BouncingBall
     {
         // remove from canvas at the current position
         erase();
-            
+        
+        int radius = diameter /2;
+
         // compute new position
         ySpeed += GRAVITY;
         yPosition += ySpeed;
